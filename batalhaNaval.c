@@ -15,16 +15,29 @@ int main() {
             }        
         } 
 
-    int navioH;
     for (int j = 5; j < 8; j++) {
-        tabuleiro[navioH][j] = 3;
+        for (int i = 8; i < 9; i++) {
+            tabuleiro[i][j] = 3;
+        }         
     }
 
-    int navioV;
     for (int i = 2; i < 5; i++) {
-        tabuleiro[i][navioV] = 3;
+        for (int j = 2; j < 3; j++) {
+            tabuleiro[i][j] = 3;
+        }          
+    }
+
+    for (int i = 1; i < 4; i++) {
+        for (int j = 0; j < 10; j++) {
+            tabuleiro[i][i + 5] = 3;
+        }          
     }
     
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 10; j++) {
+            tabuleiro[i][2 - i] = 3;
+        }          
+    }
   
     printf("    **Jogo de Batalha Naval**\n");
         printf("   ");
