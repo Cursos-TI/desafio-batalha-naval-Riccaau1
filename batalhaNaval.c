@@ -28,15 +28,12 @@ int main() {
     }
 
     for (int i = 1; i < 4; i++) {
-        for (int j = 0; j < 10; j++) {
-            tabuleiro[i][i + 5] = 3;
+        tabuleiro[i][i + 5] = 3;
         }          
-    }
+    
     
     for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 10; j++) {
-            tabuleiro[i][2 - i] = 3;
-        }          
+        tabuleiro[i][2 - i] = 3;              
     }
   
     printf("    **Jogo de Batalha Naval**\n");
